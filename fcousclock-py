@@ -1,0 +1,19 @@
+# fcousclock-py
+
+import time
+
+def focus_time(minutes):
+    start_time = time.time()
+    end_time = start_time + minutes * 60
+
+    while time.time() < end_time:
+        # 执行专注任务
+        # 你可以在这里编写你的任务逻辑
+        # 例如：打印一些信息
+        print("我正在专注!")
+
+        # 可选：添加适当的延迟，以控制循环的执行速度
+        # time.sleep(1)
+
+# 设置专注时间为30分钟
+focus_time(30)
